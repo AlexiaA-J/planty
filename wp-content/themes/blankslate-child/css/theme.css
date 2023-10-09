@@ -2,18 +2,49 @@ body{
     font-family: syne, sans-serif;
 }
 
+a, a:visited{
+    text-decoration: none;
+    color: inherit;
+}
 
 /* HEADER */
 
 #header{
     display: flex;
     justify-content: space-between;
-    width: 1440px;
+    width: auto;
     height: 80px; 
+}
+
+.logo{
+    width: 201px;
+    height: 19px;
+    margin: 31px 0px 30px 37px;
 }
 
 li.menu-item{
     display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+li.menu-item:hover{
+    font-weight: 700;
+}
+
+#menu-item-16{
+    color: white;
+    font-weight: 700;
+    background-color: #DC9F96;
+    padding-left: 61px;
+    padding-right: 61px;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    margin-left: 31px;
+}
+
+#menu-item-16:hover{
+    background-color: #C02E44;
 }
 
 /* FOOTER */

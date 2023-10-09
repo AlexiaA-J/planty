@@ -15,15 +15,16 @@
     <div id="wrapper" class="hfeed">
         <header id="header" role="banner">
             <div id="branding">
-                <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <div id="site-logo" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
                     <?php
-                    if (is_front_page() || is_home() || is_front_page() && is_home()) {
-                        echo '<h1>';
-                    }
-                    echo '<a href="' . esc_url(home_url('/')) . '" title="' . esc_attr(get_bloginfo('name')) . '" rel="home" itemprop="url"><span itemprop="name">' . esc_html(get_bloginfo('name')) . '</span></a>';
-                    if (is_front_page() || is_home() || is_front_page() && is_home()) {
-                        echo '</h1>';
-                    }
+                    if ( get_theme_mod( 'your_theme_logo' ) ) : ?>
+                    <a href="<?php echo home_url(); ?>">
+                        <img class=logo src="<?php echo get_theme_mod( 'your_theme_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" >
+                    </a>
+                    <?php //
+                    else : ?>
+                    <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+                    <?php endif; 
                     ?>
                 </div>
                 <div id="site-description" <?php if (!is_single()) {
