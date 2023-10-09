@@ -26,19 +26,10 @@ function your_theme_new_customizer_settings($wp_customize) {
 
     function add_admin_button($items, $args){
         if (is_user_logged_in() && $args->theme_location == 'main-menu') {
-            // Create the custom admin link
         $admin_link = '<li class="menu-item"><a href="http://localhost/Planty/wp-admin/">Admin</a></li>';
-
-        // Split the existing menu items into an array
         $menu_items = explode('</li>', $items);
-
-        // Find the index where you want to insert the custom item (between the 2nd and 3rd items in this example)
-        $insert_index = 1; // Change this to the desired position
-
-        // Insert the custom admin link at the specified index
+        $insert_index = 1;
         array_splice($menu_items, $insert_index, 0, $admin_link);
-
-        // Convert the array back to a string
         $items = implode('</li>', $menu_items);
         }
     return $items;
