@@ -1,0 +1,28 @@
+body{
+    font-family: syne, sans-serif;
+}
+
+
+/* HEADER */
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 80px; 
+}
+
+li.menu-item{
+    display: inline-block;
+}
+
+/* FOOTER */
+
+#footer{
+    display: flex;
+    width: 1440px;
+    height: 60px;
+    padding: 20px 0px 21px 0px;
+    justify-content: center;
+    align-items: center; 
+}
