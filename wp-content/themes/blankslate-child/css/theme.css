@@ -13,7 +13,7 @@ a, a:visited{
 #header{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: auto;
     height: 78px; 
     background-color: white;
 }
