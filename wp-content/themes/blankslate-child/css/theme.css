@@ -1,7 +1,9 @@
 body{
     width: auto;
     font-family: syne, sans-serif;
+    max-width: 1440px;
     min-width: 320px;
+    margin: auto;
 }
 
 a, a:visited{
@@ -47,6 +49,70 @@ li.menu-item:hover{
 
 #menu-item-16:hover{
     background-color: #C02E44;
+}
+
+/* FORMS */
+
+.wpcf7-text, .wpcf7-email, .wpcf7-textarea{
+	margin-top: 13px !important;
+}
+
+.wpcf7-textarea{
+    resize: none;
+}
+
+.wpcf7-spinner{
+	display: none;
+}
+
+/* Commander Form */
+
+.quantity{
+	width: 51px;
+	height: 56px;
+	border: none;
+	text-align: center;
+    border-radius: 5px 0 0 5px !important;
+}
+
+input[type=submit] {
+	background-color:#DC9F96;
+	line-height: 28px;
+	padding-top: 0px;
+    border: none;
+    color: white;
+}
+
+input[type=submit]:hover{
+	background-color: #DC9F96;
+}
+
+.plus{
+	border-radius: 0px 5px 0px 0px !important;
+	border-bottom: solid 2px white !important;
+	text-align: center;
+}
+
+.minus{
+	border-radius: 0px 0px 5px 0px !important;
+	margin-top: -10px !important;
+    text-align: center;
+}
+
+.ok{
+	background-color:#DC9F96;
+	line-height: 28px;
+	padding-top: 0px;
+	font-size: 15px;
+    font-weight: 400; 
+	width: 100px;
+	height: 56px;
+	padding: 10px 0px 10px 0px;
+	border: none;
+}
+
+.ok:hover{
+	background-color: #DC9F96;
 }
 
 /* FOOTER */
@@ -115,5 +181,10 @@ li.menu-item:hover{
             padding-top: 7px;
             padding-bottom: 7px;
             margin-left: 10px;
+    }
+
+    #wpcf7-f501-p13-o1{
+        display: flex;
+        flex-direction: row;
     }
 }
