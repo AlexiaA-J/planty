@@ -219,6 +219,22 @@ input[type=submit]:hover{
     background-color: white;
 }
 
+/* MEDIA QUERIES */
+
+@media (max-width: 900px){
+    .infos{
+        display: flex !important;
+        flex-direction: column !important;
+        margin-bottom: 44px !important;
+    }
+
+    .dividerCommande{
+        color: white;
+        margin-top: 45px !important;
+        margin-bottom: 45px !important;
+    }
+}
+
 @media (max-width: 800px) {
     
     #header{
@@ -239,6 +255,10 @@ input[type=submit]:hover{
         margin-bottom: 10px;
     }
 
+    li.menu-item:hover{
+        font-weight: 500;
+    }
+
     #menu-item-16{
         color: white;
         font-weight: 700;
@@ -249,6 +269,17 @@ input[type=submit]:hover{
         padding-bottom: 15px;
         margin-left: 10px;
     }
+
+    .titleCommande{
+        color: white;
+        text-align: center !important;
+    }
+
+    .commande .wpcf7-text, .wpcf7-email{
+         width: 300px !important;
+    }
+
+
 }
 
 @media (max-width: 480px){
