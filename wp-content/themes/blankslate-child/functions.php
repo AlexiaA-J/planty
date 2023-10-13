@@ -37,3 +37,4 @@ function your_theme_new_customizer_settings($wp_customize) {
 
 add_filter('wp_nav_menu_items', 'add_admin_button', 10, 2);
 
+add_filter('wpcf7_autop_or_not', '__return_false');

@@ -53,8 +53,10 @@ li.menu-item:hover{
 
 /* FORMS */
 
-.wpcf7-text, .wpcf7-email, .wpcf7-textarea{
+.page-id-11 .wpcf7-text, .wpcf7-email, .wpcf7-textarea{
 	margin-top: 13px !important;
+    display: flex;
+    flex-direction: column;
 }
 
 .wpcf7-textarea{
@@ -65,7 +67,19 @@ li.menu-item:hover{
 	display: none;
 }
 
-/* Commander Form */
+/* Selecteur Form */
+
+.selection{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.quantityIncrease{
+    display: flex !important;
+    flex-direction: row !important;
+    margin-right: 11px;
+}
 
 .quantity{
 	width: 51px;
@@ -73,14 +87,25 @@ li.menu-item:hover{
 	border: none;
 	text-align: center;
     border-radius: 5px 0 0 5px !important;
+    margin-top: 0px;
+}
+
+::placeholder {
+    opacity: 2;
+ }
+
+.plusminus{
+    display: flex;
+    flex-direction: column;
 }
 
 input[type=submit] {
 	background-color:#DC9F96;
-	line-height: 28px;
+	line-height: 26px;
 	padding-top: 0px;
     border: none;
     color: white;
+    font-weight: 400;
 }
 
 input[type=submit]:hover{
@@ -91,28 +116,95 @@ input[type=submit]:hover{
 	border-radius: 0px 5px 0px 0px !important;
 	border-bottom: solid 2px white !important;
 	text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .minus{
 	border-radius: 0px 0px 5px 0px !important;
-	margin-top: -10px !important;
     text-align: center;
 }
 
-.ok{
-	background-color:#DC9F96;
-	line-height: 28px;
-	padding-top: 0px;
-	font-size: 15px;
-    font-weight: 400; 
-	width: 100px;
-	height: 56px;
-	padding: 10px 0px 10px 0px;
-	border: none;
+.plus:hover, .minus:hover{
+	background-color: #C02E44 !important;
+    cursor: pointer;
 }
 
-.ok:hover{
-	background-color: #DC9F96;
+.validation{
+	background-color:#DC9F96;
+	font-size: 15px;
+    font-weight: 400; 
+    width: 100px;
+    height: 56px; 
+	padding: 9px 0px 10px 0px !important;
+	border: none;
+    border-radius: 5px !important;
+}
+
+.validation:hover{
+	background-color: #C02E44 !important;
+    cursor: pointer;
+}
+
+/* Commande Form */
+
+.commande .wpcf7-text, .wpcf7-email{
+	margin-top: 13px !important;
+    display: flex;
+    flex-direction: column;
+    width: 383px !important;
+    height: 71px !important;
+    border: none;
+    border-radius: 7px !important;
+    font-family: "Syne", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px !important;
+}
+
+.commande{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.infos{
+    display: flex !important;
+    flex-direction: row !important;
+    margin-bottom: 44px !important;
+}
+
+.titleCommande{
+    color: white;
+}
+
+.textTitle{
+    color: white !important;
+    margin-top: 30px !important;
+    font-size: 20px;
+}
+
+.dividerCommande{
+    color: white;
+    margin-left: 45px !important;
+    margin-right: 45px !important;
+}
+
+.identity, .adress{
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.buttonCommande{
+    padding-left: 57px !important;
+    padding-right: 57px !important;
+    background-color: #E0B9B4 !important;
+    border-radius: 7px !important;
+}
+
+.buttonCommande:hover{
+    background-color: #C02E44 !important;
+    cursor: pointer;
 }
 
 /* FOOTER */
