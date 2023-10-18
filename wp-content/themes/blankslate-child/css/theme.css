@@ -146,6 +146,11 @@ input[type=submit]:hover{
     cursor: pointer;
 }
 
+.buttonNousrencontrer{
+    display: flex;
+    justify-content: center !important;
+}
+
 /* Commande Form */
 
 .commande .wpcf7-text, .wpcf7-email{
@@ -277,6 +282,10 @@ input[type=submit]:hover{
 
     .commande .wpcf7-text, .wpcf7-email{
          width: 300px !important;
+    }
+
+    .page-id-11 .wpcf7-email{
+        width: 383px !important;
     }
 
 
