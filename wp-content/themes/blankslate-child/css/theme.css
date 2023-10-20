@@ -67,12 +67,24 @@ li.menu-item:hover{
 	display: none;
 }
 
+.buttonNousrencontrer{
+    display: flex;
+    justify-content: center !important;
+}
+
 /* Selecteur Form */
+
+.selecteurs{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
 
 .selection{
     display: flex !important;
     flex-direction: row !important;
     align-items: center;
+    margin-top: 15px;
 }
 
 .quantityIncrease{
@@ -82,8 +94,8 @@ li.menu-item:hover{
 }
 
 .quantity{
-	width: 51px;
-	height: 56px;
+	width: 51px !important;
+	height: 56px !important;
 	border: none;
 	text-align: center;
     border-radius: 5px 0 0 5px !important;
@@ -113,16 +125,19 @@ input[type=submit]:hover{
 }
 
 .plus{
+    font-weight: 600 !important;
 	border-radius: 0px 5px 0px 0px !important;
 	border-bottom: solid 2px white !important;
 	text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 0px 10px !important;
+    padding-bottom: 2.5px !important;
 }
 
 .minus{
+    font-weight: 600 !important;
 	border-radius: 0px 0px 5px 0px !important;
     text-align: center;
+    padding: 0px 10px !important;
 }
 
 .plus:hover, .minus:hover{
@@ -134,8 +149,8 @@ input[type=submit]:hover{
 	background-color:#DC9F96;
 	font-size: 15px;
     font-weight: 400; 
-    width: 100px;
-    height: 56px; 
+    width: 100px !important;
+    height: 56px !important; 
 	padding: 9px 0px 10px 0px !important;
 	border: none;
     border-radius: 5px !important;
@@ -146,14 +161,15 @@ input[type=submit]:hover{
     cursor: pointer;
 }
 
-.buttonNousrencontrer{
-    display: flex;
-    justify-content: center !important;
+.dividerSelecteurs{
+    color: white;
+    margin-top: 40px !important;
+    margin-bottom: 55px !important;
 }
 
 /* Commande Form */
 
-.commande .wpcf7-text, .wpcf7-email{
+.commandeForm .wpcf7-text, .wpcf7-email{
 	margin-top: 13px !important;
     display: flex;
     flex-direction: column;
@@ -167,7 +183,7 @@ input[type=submit]:hover{
     padding: 8px !important;
 }
 
-.commande{
+.commandeForm{
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -201,8 +217,9 @@ input[type=submit]:hover{
 }
 
 .buttonCommande{
-    padding-left: 57px !important;
-    padding-right: 57px !important;
+    font-size: 15px;
+    height: 55px !important;
+    padding: 0px 57px !important;
     background-color: #E0B9B4 !important;
     border-radius: 7px !important;
 }
@@ -275,6 +292,20 @@ input[type=submit]:hover{
         margin-left: 10px;
     }
 
+    .selecteurs{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .selecteurFruits{
+        margin-bottom: 10px !important;
+    }
+
+    .selection{
+        justify-content: center;
+    }
+
     .titleCommande{
         color: white;
         text-align: center !important;
@@ -319,4 +350,11 @@ input[type=submit]:hover{
         display: flex;
         flex-direction: row;
     }
+
+    .page-id-11 .wpcf7-email{
+        width: 300px !important;
+    }
+
+    .commandeForm .wpcf7-text, .wpcf7-email{
+        width: 300px !important;
 }
