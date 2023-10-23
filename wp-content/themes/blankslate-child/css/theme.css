@@ -6,6 +6,10 @@ body{
     margin: auto;
 }
 
+header{
+    display: none;
+}
+
 a, a:visited{
     text-decoration: none;
     color: inherit;
@@ -357,4 +361,5 @@ input[type=submit]:hover{
 
     .commandeForm .wpcf7-text, .wpcf7-email{
         width: 300px !important;
+    }
 }
