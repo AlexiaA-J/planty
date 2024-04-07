@@ -15,6 +15,10 @@ a, a:visited{
     color: inherit;
 }
 
+.wpcf7-response-output {
+    display: none;
+}
+
 /* HEADER */
 
 #header{
@@ -353,10 +357,6 @@ input[type=submit]:hover{
     #wpcf7-f501-p13-o1{
         display: flex;
         flex-direction: row;
-    }
-
-    .page-id-11 .wpcf7-email{
-        width: 300px !important;
     }
 
     .commandeForm .wpcf7-text, .wpcf7-email{
