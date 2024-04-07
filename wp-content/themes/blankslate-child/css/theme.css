@@ -359,10 +359,6 @@ input[type=submit]:hover{
         flex-direction: row;
     }
 
-    .page-id-11 .wpcf7-email{
-        width: 300px !important;
-    }
-
     .commandeForm .wpcf7-text, .wpcf7-email{
         width: 300px !important;
  }
