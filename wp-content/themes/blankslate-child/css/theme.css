@@ -11,6 +11,14 @@ a, a:visited{
     color: inherit;
 }
 
+.post-edit-link {
+    display: none;
+}
+
+.wpcf7-response-output {
+    display: none;
+}
+
 /* HEADER */
 
 #header{
@@ -357,4 +365,5 @@ input[type=submit]:hover{
 
     .commandeForm .wpcf7-text, .wpcf7-email{
         width: 300px !important;
+ }
 }
